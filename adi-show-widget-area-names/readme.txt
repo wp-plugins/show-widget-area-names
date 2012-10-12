@@ -7,7 +7,7 @@ Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. This will only display for the edit_posts capabilities. You must use print $params['before_widget'] in your widget definitions to view the area name.
+Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget'].
 
 == Description ==
 
