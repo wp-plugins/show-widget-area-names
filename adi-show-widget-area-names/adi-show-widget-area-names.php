@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: ADI Show Widget Area Names
+Plugin Name: Show Widget Area Names
 Plugin URI: http://www.amplitudedesign.com
 Description: Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. 
 Version: 1.0.1
