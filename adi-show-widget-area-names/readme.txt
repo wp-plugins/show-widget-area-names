@@ -18,8 +18,6 @@ If the widget area is empty then no widget area name is displayed.
 
 This section describes how to install the plugin and get it working.
 
-e.g.
-
 1. Upload `show-widget-area-names` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Change the included css file to your liking.
