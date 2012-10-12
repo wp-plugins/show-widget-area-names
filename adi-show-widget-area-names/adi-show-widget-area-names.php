@@ -2,7 +2,7 @@
 /*
 Plugin Name: ADI Show Widget Area Names
 Plugin URI: http://www.amplitudedesign.com
-Description: Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. This only display for the edit_posts capabilities. You must use print $params['before_widget'] in your widget definitions to view the area name.
+Description: Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. 
 Version: 1.0.1
 Author: Kevin Johnson
 Author URI: http://www.amplitudedesign.com
