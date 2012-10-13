@@ -30,7 +30,7 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 == Screenshots ==
 
-1. Shows the text that will appear above the widget.
+1. assets/screenshot-1.jpg
 
 == Changelog ==
 
