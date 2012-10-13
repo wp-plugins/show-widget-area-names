@@ -28,6 +28,9 @@ This section describes how to install the plugin and get it working.
 
 The plugin uses the formatting of properly setup widgets and appends the widget area name using before_widget.
 
+== Screenshots ==
+
+1. Shows the text that will appear above the widget.
 
 == Changelog ==
 
