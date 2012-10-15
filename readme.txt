@@ -10,8 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget'].
 
 == Description ==
-
-Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. This will only display for the edit_posts capabilities. You must use print $params['before_widget'] in your widget definitions to view the area name.
+If you get confused by which widget area a widget is attached to then this plugin can help.
+The plugin shows the widget area names on non-admin pages and posts. This adds the widget area title to widget $params['before_widget']. This will only display for the edit_posts capabilities. You must use print $params['before_widget'] in your widget definitions to view the area name.
 If the widget area is empty then no widget area name is displayed.
 
 == Installation ==
