@@ -30,7 +30,7 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 == Screenshots ==
 
-1. assets/screenshot1.jpg
+1. screenshot1.jpg
 
 == Changelog ==
 
