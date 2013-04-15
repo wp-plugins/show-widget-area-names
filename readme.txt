@@ -50,4 +50,4 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 = 1.0.4 =
 
-* Added the JQuery toggle to admin bar.
+* Added the JQuery toggle to admin bar. Update latest working version.
