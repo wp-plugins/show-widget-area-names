@@ -47,11 +47,29 @@ function widget_show_title_load(){
 
 function widget_show_title_scripts(){
 	if(current_user_can('edit_posts') && !is_admin()){
-		wp_register_style('adi-widget-area-names',plugins_url().'/adi-show-widget-area-names/css/adi-show-widget-areas.css');
+		wp_register_style('adi-widget-area-names',plugins_url().'/show-widget-area-names/css/adi-show-widget-areas.css');
 		wp_enqueue_style('adi-widget-area-names');
+		wp_register_script('adi-widget-area-names-js',plugins_url().'/show-widget-area-names/js/adi-show-widget-areas.js',array('jquery'),null,true);
+		wp_enqueue_script('adi-widget-area-names-js');
 	}
 }
 
+function admin_bar_render() {
+    global $wp_admin_bar;
+    // we can add a submenu item too
+    $wp_admin_bar->add_menu( array(
+        'parent' => false,
+        'id' => 'show-widget-area-toggle',
+    	'meta' => array('class' => 'show-widget-area-toggle'),
+        'title' => ('- swan'),
+        'href' => '#'
+    ) );
 }
-if(!is_admin())add_action('plugins_loaded',array('ShowWidgetTitle','widget_show_title_load'));
-if(!is_admin())add_action('wp_enqueue_scripts',array('ShowWidgetTitle','widget_show_title_scripts'));
+
+}
+if(!is_admin()):
+add_action('plugins_loaded',array('ShowWidgetTitle','widget_show_title_load'));
+add_action('wp_enqueue_scripts',array('ShowWidgetTitle','widget_show_title_scripts'));
+// and we hook our function via
+add_action( 'wp_before_admin_bar_render', array('ShowWidgetTitle','admin_bar_render') );
+endif;
