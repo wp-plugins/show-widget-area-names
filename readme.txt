@@ -15,7 +15,7 @@ If you get confused by which widget area a widget is attached to when browsing y
 The plugin shows the widget area names on non-admin pages and posts. This adds the widget area title to widget $params['before_widget']. This will only display for the edit_posts capabilities. You must use print $params['before_widget'] in your widget definitions to view the area name.
 If the widget area is empty then no widget area name is displayed.
 
-Recently added a jQuery toggle to the admin menu bar to quickly hide/show the widget area names.
+Recently added a jQuery toggle to the admin menu bar to quickly hide/show the widget area names. See +/- swan link in admin bar.
 
 == Installation ==
 
