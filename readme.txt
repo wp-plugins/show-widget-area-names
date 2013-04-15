@@ -24,6 +24,7 @@ This section describes how to install the plugin and get it working.
 1. Upload `show-widget-area-names` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Change the included css file to your liking.
+4. You will find a link added to the Admin Bar to toggle Show Widget Area Names (+/- swan).
 
 == Frequently Asked Questions ==
 
