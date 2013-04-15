@@ -3,7 +3,7 @@ Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
 Tested up to: 3.5.1
-Stable tag: 1.0.3
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,8 @@ Plugin to show the widget area names on non-admin pages and posts. This adds the
 If you get confused by which widget area a widget is attached to when browsing your site then this plugin can help.
 The plugin shows the widget area names on non-admin pages and posts. This adds the widget area title to widget $params['before_widget']. This will only display for the edit_posts capabilities. You must use print $params['before_widget'] in your widget definitions to view the area name.
 If the widget area is empty then no widget area name is displayed.
+
+Recently added a jQuery toggle to the admin menu bar to quickly hide/show the widget area names. See +/- swan link in admin bar.
 
 == Installation ==
 
@@ -42,3 +44,16 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 = 1.0.2 =
 
 * Trying to get screenshots working
+
+= 1.0.3 =
+
+* Added the JQuery toggle to admin bar.
+
+
+= 1.0.4 =
+
+* Added the JQuery toggle to admin bar. Update latest working version.
+
+= 1.0.5 =
+
+* Update latest working version.

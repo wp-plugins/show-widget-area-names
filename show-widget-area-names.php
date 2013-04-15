@@ -1,13 +1,14 @@
 <?php
 /*
-Plugin Name: Show Widget Area Names
+Plugin Name: Show Widget Area Names (SWAN)
 Plugin URI: http://www.amplitudedesign.com
-Description: Plugin to show the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. 
-Version: 1.0.1
+Description: SWAN displays the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. 
+Version: 1.0.5
 Author: Kevin Johnson
 Author URI: http://www.amplitudedesign.com
 License: GPLv2 or later
 */
+
 
 /*
 This program is free software; you can redistribute it and/or
@@ -60,11 +61,12 @@ function admin_bar_render() {
     $wp_admin_bar->add_menu( array(
         'parent' => false,
         'id' => 'show-widget-area-toggle',
-    	'meta' => array('class' => 'show-widget-area-toggle'),
+    	'meta' => array('class' => 'show-widget-area-toggle','title' => 'Show Widget Area Names'),
         'title' => ('- swan'),
         'href' => '#'
     ) );
 }
+
 
 }
 if(!is_admin()):
