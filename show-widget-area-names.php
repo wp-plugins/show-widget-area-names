@@ -60,11 +60,12 @@ function admin_bar_render() {
     $wp_admin_bar->add_menu( array(
         'parent' => false,
         'id' => 'show-widget-area-toggle',
-    	'meta' => array('class' => 'show-widget-area-toggle'),
+    	'meta' => array('class' => 'show-widget-area-toggle','title' => 'Show Widget Area Names'),
         'title' => ('- swan'),
         'href' => '#'
     ) );
 }
+
 
 }
 if(!is_admin()):
