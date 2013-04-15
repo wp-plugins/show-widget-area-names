@@ -3,7 +3,7 @@ Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
 Tested up to: 3.5.1
-Stable tag: 1.0.5
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,7 @@ This section describes how to install the plugin and get it working.
 
 = How does it work? =
 
-The plugin uses the formatting of properly setup widgets and appends the widget area name using before_widget.
+The plugin uses the formatting of properly setup widgets and appends the widget area name using before_widget. You will find a link added to the Admin Bar to toggle "swan."
 
 == Screenshots ==
 
@@ -37,23 +37,30 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.7 =
 
-* This is the major version.
+* Update to default to latest working version.
 
-= 1.0.2 =
+= 1.0.6 =
 
-* Trying to get screenshots working
+* Update to default to hidden until clicked in admin bar.
 
-= 1.0.3 =
+= 1.0.5 =
 
-* Added the JQuery toggle to admin bar.
-
+* Update latest working version.
 
 = 1.0.4 =
 
 * Added the JQuery toggle to admin bar. Update latest working version.
 
-= 1.0.5 =
+= 1.0.3 =
 
-* Update latest working version.
+* Added the JQuery toggle to admin bar.
+
+= 1.0.2 =
+
+* Trying to get screenshots working
+
+= 1.0.1 =
+
+* This is the major version.
