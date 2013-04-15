@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: kmfj1
-Tags: widgets
+Tags: widgets, sidebar
 Requires at least: 3.4.1
 Tested up to: 3.5.1
 Stable tag: 1.0.4
