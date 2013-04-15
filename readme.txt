@@ -3,7 +3,7 @@ Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
 Tested up to: 3.5.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,3 +53,7 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 = 1.0.4 =
 
 * Added the JQuery toggle to admin bar. Update latest working version.
+
+= 1.0.5 =
+
+* Update latest working version.
