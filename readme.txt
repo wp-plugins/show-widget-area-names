@@ -38,6 +38,10 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 == Changelog ==
 
+= 1.0.8 =
+
+* Update to __CLASS__ to actual class name. Tested on 4.0.0.
+
 = 1.0.6 =
 
 * Update to default to hidden until clicked in admin bar.
