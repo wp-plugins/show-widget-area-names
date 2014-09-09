@@ -3,7 +3,7 @@ Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
 Tested up to: 4.0.0
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,9 +38,9 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 == Changelog ==
 
-= 1.0.8 =
+= 1.0.9 =
 
-* Update to __CLASS__ to actual class name. Tested on 4.0.0.
+* Update to __CLASS__ to actual class name. Tested on 4.0.0. Update change log.
 
 = 1.0.6 =
 

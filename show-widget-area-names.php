@@ -3,7 +3,7 @@
 Plugin Name: Show Widget Area Names (SWAN)
 Plugin URI: http://www.amplitudedesign.com
 Description: SWAN displays the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. 
-Version: 1.0.8
+Version: 1.0.9
 Author: Kevin Johnson
 Author URI: http://www.amplitudedesign.com
 License: GPLv2 or later
