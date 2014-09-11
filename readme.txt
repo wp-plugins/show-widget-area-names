@@ -39,13 +39,9 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 == Changelog ==
 
-= 1.0.11 =
-
-* Added a second screen shot.
-
 = 1.0.10 =
 
-* Update to return false onClick.
+* Update to return false onClick. Added a screenshot
 
 = 1.0.9 =
 
