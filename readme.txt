@@ -3,7 +3,7 @@ Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
 Tested up to: 4.0.0
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,8 +35,13 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 == Screenshots ==
 
 1. How the widget name is outputted on the page.
+2. This is the Admin Bar and the display above the widget.
 
 == Changelog ==
+
+= 1.0.11 =
+
+* Added a second screen shot.
 
 = 1.0.10 =
 
