@@ -3,7 +3,7 @@
 Plugin Name: Show Widget Area Names (SWAN)
 Plugin URI: http://www.amplitudedesign.com
 Description: SWAN displays the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget']. 
-Version: 1.0.9
+Version: 1.0.10
 Author: Kevin Johnson
 Author URI: http://www.amplitudedesign.com
 License: GPLv2 or later
@@ -33,26 +33,26 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 class ShowWidgetTitle{
 
 function widget_show_title($params){
-	// If the user can't manage options return $name	
-	if (!current_user_can('edit_posts') )return($params);
-		$params[0]['before_widget'] .= '<div class="adi-widget-area-name" >'.$params[0]['name'].'&nbsp;<a target="_blank" href="'.site_url().'/wp-admin/widgets.php" title="'.$params[0]['name'].'" alt="'.$params[0]['name'].'">[edit]</a></div>';
-	return($params);
+        // If the user can't manage options return $name        
+        if (!current_user_can('edit_posts') )return($params);
+                $params[0]['before_widget'] .= '<div class="adi-widget-area-name" >'.$params[0]['name'].'&nbsp;<a target="_blank" href="'.site_url().'/wp-admin/widgets.php" title="'.$params[0]['name'].'" alt="'.$params[0]['name'].'">[edit]</a></div>';
+        return($params);
 }
 
 function widget_show_title_load(){
 //Only register on the non-admin pages of the site.
-	if(current_user_can('edit_posts') && !is_admin()){
-		add_filter("dynamic_sidebar_params",array('ShowWidgetTitle', 'widget_show_title'));
-	}
+        if(current_user_can('edit_posts') && !is_admin()){
+                add_filter("dynamic_sidebar_params",array(__CLASS__,'widget_show_title'));
+        }
 }
 
 function widget_show_title_scripts(){
-	if(current_user_can('edit_posts') && !is_admin()){
-		wp_register_style('adi-widget-area-names',plugins_url().'/show-widget-area-names/css/adi-show-widget-areas.css');
-		wp_enqueue_style('adi-widget-area-names');
-		wp_register_script('adi-widget-area-names-js',plugins_url().'/show-widget-area-names/js/adi-show-widget-areas.js',array('jquery'),null,true);
-		wp_enqueue_script('adi-widget-area-names-js');
-	}
+        if(current_user_can('edit_posts') && !is_admin()){
+                wp_register_style('adi-widget-area-names',plugins_url().'/show-widget-area-names/css/adi-show-widget-areas.css');
+                wp_enqueue_style('adi-widget-area-names');
+                wp_register_script('adi-widget-area-names-js',plugins_url().'/show-widget-area-names/js/adi-show-widget-areas.js',array('jquery'),null,true);
+                wp_enqueue_script('adi-widget-area-names-js');
+        }
 }
 
 function admin_bar_render() {
@@ -62,18 +62,18 @@ function admin_bar_render() {
     $wp_admin_bar->add_menu( array(
         'parent' => false,
         'id' => 'show-widget-area-toggle',
-    	'meta' => array('class' => 'show-widget-area-toggle','title' => 'Show Widget Area Names'),
+        'meta' => array('class' => 'show-widget-area-toggle','title' => 'Show Widget Area Names', "onclick" => 'swanToggle(); return false;'),
         'title' => ('+ swan'),
         'href' => '#'
     ) );
 }
 
 function set_options(){
-	add_option('swan-persist',true,null,true);
+        add_option('swan-persist',true,null,true);
 }
 
 function unset_options(){
-	delete_option('swan-persist');
+        delete_option('swan-persist');
 }
 }
 
