@@ -3,12 +3,10 @@ jQuery(document).ready(function() {
 	jQuery('.adi-widget-area-name').hide();
 	jQuery('li.show-widget-area-toggle a').toggle(
 		    function() {
-		    	//jQuery(this).html('- swan');
-                       jQuery(this).toggleClass('ab-icon-up', 'ab-icon-down'); 
+		    	jQuery(this).html('- swan');
 		},
 		function() {
-                    //jQuery(this).html('+ swan');
-                    jQuery(this).toggleClass('ab-icon-up', 'ab-icon-down'); 
+	    	jQuery(this).html('+ swan');
 	    });
 	
 jQuery("li.show-widget-area-toggle a").click(function(){
