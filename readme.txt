@@ -42,7 +42,6 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 * Back to 1.0.10.
 
-
 = 1.0.9 =
 
 * Update to __CLASS__ to actual class name. Tested on 4.0.0. Update change log.
