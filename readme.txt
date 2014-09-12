@@ -35,6 +35,7 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 == Screenshots ==
 
 1. How the widget name is outputted on the page.
+2. Clicking on swan in the Admin Menu Bar toggles the widget title.
 
 == Changelog ==
 
