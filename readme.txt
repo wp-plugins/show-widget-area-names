@@ -39,6 +39,10 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 
 == Changelog ==
 
+= 1.0.11 =
+
+* Changed + - to icon in Admin bar.
+
 = 1.0.10 =
 
 * Update to return false onClick. Added a screenshot
