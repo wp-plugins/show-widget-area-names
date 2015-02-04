@@ -1,16 +1,19 @@
 jQuery(document).ready(function() {
-// Handler for .ready() called.
+
 	jQuery('.adi-widget-area-name').hide();
-	jQuery('li.show-widget-area-toggle a').toggle(
-		    function() {
-		    	jQuery(this).html('- swan');
-		},
-		function() {
-	    	jQuery(this).html('+ swan');
-	    });
-	
-jQuery("li.show-widget-area-toggle a").click(function(){
-	jQuery('.adi-widget-area-name').slideToggle();
-});
+
+    jQuery("li.show-widget-area-toggle a").click(function(){
+        var toggleLink = jQuery('li.show-widget-area-toggle a');
+        var curToggleVal = toggleLink.html();
+
+        if(curToggleVal == '+ swan') {
+            jQuery(toggleLink).html('- swan');
+        } else {
+            jQuery(toggleLink).html('+ swan');
+        }
+
+    	jQuery('.adi-widget-area-name').slideToggle();
+
+    });
 
 });
