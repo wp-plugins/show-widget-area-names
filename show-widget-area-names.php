@@ -3,7 +3,7 @@
 Plugin Name: Show Widget Area Names (SWAN)
 Plugin URI: http://www.amplitudedesign.com
 Description: SWAN displays the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget'].
-Version: 1.0.15
+Version: 1.0.16
 Author: Kevin Johnson
 Author URI: http://www.amplitudedesign.com
 License: GPLv2 or later
@@ -50,7 +50,7 @@ class ShowWidgetTitle
         if(current_user_can('edit_posts') && !is_admin()){
                 wp_register_style('adi-widget-area-names', plugins_url().'/show-widget-area-names/css/adi-show-widget-areas.css');
                 wp_enqueue_style('adi-widget-area-names');
-                wp_register_script('adi-widget-area-names-js',plugins_url().'/show-widget-area-names/js/adi-show-widget-areas.js', array('jquery'), '1.0.15', true);
+                wp_register_script('adi-widget-area-names-js',plugins_url().'/show-widget-area-names/js/adi-show-widget-areas.js', array('jquery'), '1.0.16', true);
                 wp_enqueue_script('adi-widget-area-names-js');
         }
     }
@@ -62,7 +62,7 @@ class ShowWidgetTitle
         $wp_admin_bar->add_node( array(
             'parent' => false,
             'id' => 'show-widget-area-toggle',
-            'meta' => array('class' => 'show-widget-area-toggle', 'title' => 'Show Widget Area Names'),
+            'meta' => array('class' => 'show-widget-area-toggle', 'title' => 'Show Widget Area Names', 'onclick' => 'swanToggle();'),
             'title' => '+ swan',
             'href' => '#'
         ) );
