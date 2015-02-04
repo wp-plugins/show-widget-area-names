@@ -2,8 +2,8 @@
 Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
-Tested up to: 4.0.0
-Stable tag: 1.0.13
+Tested up to: 4.1
+Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,9 +35,12 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 == Screenshots ==
 
 1. How the widget name is outputted on the page.
-2. Clicking on swan in the Admin Menu Bar toggles the widget title.
 
 == Changelog ==
+
+= 1.0.14 =
+
+* Updates to javascript to toggle the admin bar menu item. Stopped working on 4.1.
 
 = 1.0.12 =
 
