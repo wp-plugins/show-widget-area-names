@@ -3,7 +3,7 @@ Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
 Tested up to: 4.1
-Stable tag: 1.0.14
+Stable tag: 1.0.16
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,14 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 1. How the widget name is outputted on the page.
 
 == Changelog ==
+
+= 1.0.16 = Update to call onclick inline admin bar. Working on stability of javascript call.
+
+* Updates to load javascript using version number.
+
+= 1.0.15 =
+
+* Updates to load javascript using version number.
 
 = 1.0.14 =
 
