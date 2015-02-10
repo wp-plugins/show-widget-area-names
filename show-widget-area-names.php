@@ -3,7 +3,7 @@
 Plugin Name: Show Widget Area Names (SWAN)
 Plugin URI: http://www.amplitudedesign.com
 Description: SWAN displays the widget area names on non-admin pages and posts. This adds the title to widget $params['before_widget'].
-Version: 1.0.17
+Version: 1.0.18
 Author: Kevin Johnson
 Author URI: http://www.amplitudedesign.com
 License: GPLv2 or later
@@ -32,21 +32,21 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 class ShowWidgetTitle
 {
 
-    function widget_show_title($params){
+    public static function widget_show_title($params){
         // If the user can't manage options return $name
         if (!current_user_can('edit_posts') )return($params);
                 $params[0]['before_widget'] .= '<div class="adi-widget-area-name" >'.$params[0]['name'].'&nbsp;<a target="_blank" href="'.site_url().'/wp-admin/widgets.php" title="'.$params[0]['name'].'" alt="'.$params[0]['name'].'">[edit]</a></div>';
         return($params);
     }
 
-    function widget_show_title_load(){
+    public static function widget_show_title_load(){
     //Only register on the non-admin pages of the site.
         if(current_user_can('edit_posts') && !is_admin()){
                 add_filter("dynamic_sidebar_params",array(__CLASS__,'widget_show_title'));
         }
     }
 
-    function widget_show_title_scripts(){
+    public static function widget_show_title_scripts(){
         if(current_user_can('edit_posts') && !is_admin()){
                 wp_register_style('adi-widget-area-names', plugins_url().'/show-widget-area-names/css/adi-show-widget-areas.css');
                 wp_enqueue_style('adi-widget-area-names');
@@ -55,7 +55,7 @@ class ShowWidgetTitle
         }
     }
 
-    function admin_bar_render() {
+    public static function admin_bar_render() {
         global $wp_admin_bar;
 
         // we can add a submenu item too

@@ -3,7 +3,7 @@ Contributors: kmfj1
 Tags: widgets
 Requires at least: 3.4.1
 Tested up to: 4.1
-Stable tag: 1.0.17
+Stable tag: 1.0.18
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,10 @@ The plugin uses the formatting of properly setup widgets and appends the widget 
 1. How the widget name is outputted on the page.
 
 == Changelog ==
+
+= 1.0.18 =
+
+* Update method hooks to visibility public and static for php warnings.
 
 = 1.0.17 =
 
